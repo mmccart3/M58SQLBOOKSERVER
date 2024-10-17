@@ -18,10 +18,10 @@ const deleteAllBooks = require("../controllers/deleteAllBooks");
 
 bookRouter.post("/addBook",addBook);
 bookRouter.get("/listAllBooks",listAllBooks);
-//
-//
-//
-//
-//
+bookRouter.put("/updateAuthor",updateAuthor);
+bookRouter.put("/updateGenre",updateGenre);
+bookRouter.delete("/deleteBook", deleteBook);
+bookRouter.delete("/deleteAllBooks",deleteAllBooks);
+bookRouter.get("/bookDetails",bookDetails);
 
 module.exports = bookRouter;
